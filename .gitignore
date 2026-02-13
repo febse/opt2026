@@ -219,3 +219,5 @@ opt2025.zip
 *.lp
 
 exams/
+
+**/*.quarto_ipynb
