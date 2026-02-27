@@ -17,6 +17,7 @@ book:
     # - part: 01-Python/index.qmd
     - 01-Introduction.ipynb
     - 02-Graphical-1-Class.ipynb
+    - 02-Graphical-1.ipynb
     # - 03-Graphical-Method/01-Blending.ipynb
     # - 03-Graphical-Method/02-Sensitivity.ipynb
 #    - 04-Simplex/01-Canonical-Representation.ipynb
