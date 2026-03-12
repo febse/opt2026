@@ -221,3 +221,6 @@ opt2025.zip
 exams/
 
 **/*.quarto_ipynb
+
+# Excel lock files
+~$*.xlsx
