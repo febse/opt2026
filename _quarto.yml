@@ -17,9 +17,9 @@ book:
     # - part: 01-Python/index.qmd
     - 01-Introduction.ipynb
     # - 02-Graphical-1-Class.ipynb
-    # - 02-Graphical-1.ipynb
-    # - 03-Graphical-Sensitivity.ipynb
-    # - 03-Graphical-Sensitivity-Class.ipynb
+    - 02-Graphical-1.ipynb
+    - 03-Graphical-Sensitivity.ipynb
+    - 03-Graphical-Sensitivity-Class.ipynb
     # - 04-Duals.ipynb
     - 04-Modeling.ipynb
     # - 03-Graphical-Method/01-Blending.ipynb
