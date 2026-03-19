@@ -22,6 +22,7 @@ book:
     - 03-Graphical-Sensitivity-Class.ipynb
     # - 04-Duals.ipynb
     - 04-Modeling-1.ipynb
+    - 04-LP-Diet.ipynb
     # - 03-Graphical-Method/01-Blending.ipynb
     # - 03-Graphical-Method/02-Sensitivity.ipynb
 #    - 04-Simplex/01-Canonical-Representation.ipynb
