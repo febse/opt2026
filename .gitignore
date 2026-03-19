@@ -215,6 +215,7 @@ _book/
 _site/
 lit/
 opt2025.zip
+site_libs/
 
 *.lp
 
