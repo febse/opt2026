@@ -1,0 +1,75 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[a4paper, left=1.0cm, right=1.0cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{lpform}
+
+\renewcommand{\arraystretch}{2.0}
+\setlength{\tabcolsep}{8pt}
+\setlength{\hfuzz}{3pt}
+\pagestyle{empty}
+
+% Column type for a fixed-width centred cell
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{document}
+
+% ── Two-column layout: left = standard form + blank, right = three tableaus ──
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+  \noindent\textbf{Задача (стандартна форма):}
+  \begin{lpformulation}
+    \lpobj*{max}{z = x_1 + 1{,}5\,x_2}
+    \lpeq*{x_1 + 2x_2 + s_{\text{б}} = 10}{}
+    \lpeq*{x_1 + x_2 \hspace{1.55em} + s_{\text{з}} = 8}{}
+    \lpeq*{x_1,\, x_2,\, s_{\text{б}},\, s_{\text{з}} \geq 0}{}
+  \end{lpformulation}
+  % rest of left half blank for handwriting
+  \vspace{12.2cm}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.50\textwidth}
+
+% ---- helper macro for one empty tableau -----------------------------------
+% columns: c_B | Базис | x1 | x2 | sб | sз | RHS | Отн.
+% top row:  c_j objective coefficients
+\newcommand{\simplextab}[1]{%
+  \noindent\textbf{Итерация #1}\\[2pt]
+  {\setlength{\tabcolsep}{3pt}%
+  \begin{tabular}{C{0.6cm}C{0.85cm}C{0.6cm}C{0.6cm}C{0.75cm}C{0.75cm}C{0.85cm}C{1.0cm}}
+    \toprule
+    \multicolumn{2}{c}{} & \multicolumn{4}{c}{$c_j$} & & \\
+    \cmidrule(lr){3-6}
+    \multicolumn{2}{c}{} & $1$ & $1{,}5$ & $0$ & $0$ & & \\
+    \midrule
+    $c_B$ & Базис & $x_1$ & $x_2$ & $s_{\text{б}}$ & $s_{\text{з}}$ & RHS & Отн. \\
+    \midrule
+          &       &       &       &       &       &     &      \\[6pt]
+          &       &       &       &       &       &     &      \\[6pt]
+    \midrule
+          & $z$   &       &       &       &       &     &      \\
+    \bottomrule
+  \end{tabular}}%
+}
+
+% ── Tableau 1 ────────────────────────────────────────────────────────────
+\simplextab{1}
+
+\vspace{1.5cm}
+
+% ── Tableau 2 ────────────────────────────────────────────────────────────
+\simplextab{2}
+
+\vspace{1.5cm}
+
+\simplextab{3}
+
+\end{minipage}
+
+\end{document}
