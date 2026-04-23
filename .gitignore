@@ -227,3 +227,5 @@ exams/
 ~$*.xlsx
 
 grades/
+
+__*
