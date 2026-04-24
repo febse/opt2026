@@ -26,7 +26,8 @@ book:
     - 05-Simplex-Method.ipynb
     - 05-Simplex-Method-Class.ipynb
     - 06-01-Job-Assignment.ipynb
-    - 06-02-Max-Flow-Shortest-Path.ipynb
+    - 06-02-Max-Flow.ipynb
+    - 06-03-Shortest-Path.ipynb
     
     # - 03-Graphical-Method/01-Blending.ipynb
     # - 03-Graphical-Method/02-Sensitivity.ipynb
